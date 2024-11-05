@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TugasModul3</string>
+    <string name="welcome">WELCOME TO MY APPS</string>
+    <string name="login">LOGIN</string>
+    <string name="email">E-MAIL</string>
+    <string name="nama">NAMA LENGKAP</string>
+    <string name="register">REGISTER</string>
+    <string name="password">PASSWORD</string>
+    <string name="username">USERNAME</string>
+</resources>
