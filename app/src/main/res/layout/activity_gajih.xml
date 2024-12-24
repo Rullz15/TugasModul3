@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Judul Aplikasi -->
+
+        <!-- Label Nama -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Aplikasi Perhitungan Gaji"
+            android:textColor="#B700FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukan Nama Anda"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#666666"
+            android:paddingBottom="4dp" />
+
+        <!-- Input Nama -->
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B700FF"
+            android:fontFamily="sans-serif-light"
+            android:hint="Nama"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <!-- Label Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#666666"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+
+        <!-- Checkbox Menikah -->
+        <CheckBox
+            android:id="@+id/checkboxMarried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menikah"
+            android:textColor="#333333"
+            android:buttonTint="#B700FF"
+            android:fontFamily="sans-serif" />
+
+        <!-- Label Golongan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#666666"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+
+        <!-- RadioGroup untuk Golongan -->
+        <RadioGroup
+            android:id="@+id/radioGroupGolongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioGolongan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan 1"
+                android:textColor="#333333"
+                android:buttonTint="#B700FF"
+                android:fontFamily="sans-serif" />
+
+            <RadioButton
+                android:id="@+id/radioGolongan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan 2"
+                android:textColor="#333333"
+                android:buttonTint="#B700FF"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Button Calculate -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hitung Gaji"
+            android:backgroundTint="#B700FF"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- TextViews for displaying results -->
+        <TextView
+            android:id="@+id/txtResult1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/txtResult2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/txtResult3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Golongan:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/txtResult4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informasi Gaji"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:fontFamily="sans-serif" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pattern" />
+    </LinearLayout>
+</ScrollView>
